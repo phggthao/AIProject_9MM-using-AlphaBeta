@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="board.BoardController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="150.0" layoutX="944.0" layoutY="398.0" stroke="#515050" strokeType="INSIDE" strokeWidth="0.3" width="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="150.0" layoutX="43.0" layoutY="398.0" stroke="#515050" strokeType="INSIDE" strokeWidth="0.3" width="200.0" />
+      <VBox alignment="CENTER" layoutX="43.0" layoutY="365.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="54.0" prefWidth="200.0" text="WHITE">
+               <font>
+                  <Font name="Georgia Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="22.0" prefWidth="202.0" text="Human Player">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <ImageView fitHeight="750.0" fitWidth="1000.0" layoutX="211.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+           <Image url="@/images/1024px-Nine_Men's_Morris_board.png" />
+         </image>
+      </ImageView>
+      <Circle fx:id="pos1" centerX="288.0" centerY="158.0" fill="TRANSPARENT" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="pos2" centerX="288.0" centerY="456.0" fill="TRANSPARENT" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="pos3" centerX="287.0" centerY="756.0" fill="TRANSPARENT" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="pos4" centerX="387.0" centerY="257.0" fill="TRANSPARENT" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="pos5" centerX="387.0" centerY="456.0" fill="TRANSPARENT" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="pos6" centerX="387.0" centerY="656.0" fill="TRANSPARENT" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="pos7" centerX="487.0" centerY="357.0" fill="TRANSPARENT" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="pos8" centerX="487.0" centerY="456.0" fill="TRANSPARENT" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="pos9" centerX="487.0" centerY="556.0" fill="TRANSPARENT" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="pos10" centerX="587.0" centerY="158.0" fill="TRANSPARENT" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="pos11" centerX="587.0" centerY="257.0" fill="TRANSPARENT" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="pos12" centerX="587.0" centerY="357.0" fill="TRANSPARENT" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="pos13" centerX="587.0" centerY="556.0" fill="TRANSPARENT" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="pos14" centerX="587.0" centerY="656.0" fill="TRANSPARENT" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="pos15" centerX="587.0" centerY="756.0" fill="TRANSPARENT" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="pos16" centerX="688.0" centerY="357.0" fill="TRANSPARENT" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="pos17" centerX="688.0" centerY="456.0" fill="TRANSPARENT" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="pos18" centerX="688.0" centerY="556.0" fill="TRANSPARENT" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="pos19" centerX="788.0" centerY="257.0" fill="TRANSPARENT" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="pos20" centerX="788.0" centerY="456.0" fill="TRANSPARENT" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="pos21" centerX="788.0" centerY="656.0" fill="TRANSPARENT" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="pos22" centerX="886.0" centerY="158.0" fill="TRANSPARENT" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="pos23" centerX="886.0" centerY="456.0" fill="TRANSPARENT" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="pos24" centerX="886.0" centerY="756.0" fill="#54ff8500" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Group layoutX="886.0" layoutY="741.0" fx:id="x24">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" layoutX="-1.0" layoutY="2.0" rotate="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" layoutX="-0.9180488586425781" layoutY="1.9103775024414062" rotate="-45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" />
+         </children>
+      </Group>
+      <Group layoutX="886.0" layoutY="440.0" fx:id="x23">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" layoutX="-1.0" layoutY="2.0" rotate="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" rotate="-45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" x="-0.9180488586425781" y="1.9103775024414062" />
+         </children>
+      </Group>
+      <Group layoutX="885.0" layoutY="141.0" fx:id="x22">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" layoutX="-1.0" layoutY="2.0" rotate="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" layoutX="-0.9180488586425781" layoutY="1.9103775024414062" rotate="-45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" />
+         </children>
+      </Group>
+      <Group layoutX="786.0" layoutY="641.0" fx:id="x21">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" layoutX="-1.0" layoutY="2.0" rotate="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" rotate="-45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" x="-0.9180488586425781" y="1.9103775024414062" />
+         </children>
+      </Group>
+      <Group layoutX="786.0" layoutY="440.0" fx:id="x20">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" layoutX="-1.0" layoutY="2.0" rotate="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" rotate="-45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" x="-0.9180488586425781" y="1.9103775024414062" />
+         </children>
+      </Group>
+      <Group layoutX="787.0" layoutY="241.0" fx:id="x19">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" layoutX="-1.0" layoutY="2.0" rotate="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" rotate="-45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" x="-0.9180488586425781" y="1.9103775024414062" />
+         </children>
+      </Group>
+      <Group layoutX="686.0" layoutY="541.0" fx:id="x18">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" layoutX="-1.0" layoutY="2.0" rotate="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" rotate="-45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" x="-0.9180488586425781" y="1.9103775024414062" />
+         </children>
+      </Group>
+      <Group layoutX="686.0" layoutY="440.0" fx:id="x17">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" layoutX="-1.0" layoutY="2.0" rotate="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" rotate="-45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" x="-0.9180488586425781" y="1.9103775024414062" />
+         </children>
+      </Group>
+      <Group layoutX="686.0" layoutY="340.0" fx:id="x16">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" layoutX="-1.0" layoutY="2.0" rotate="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" rotate="-45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" x="-0.9180488586425781" y="1.9103775024414062" />
+         </children>
+      </Group>
+      <Group layoutX="587.0" layoutY="741.0" fx:id="x15">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" layoutX="-1.0" layoutY="2.0" rotate="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" layoutX="-0.9180488586425781" layoutY="1.9103775024414062" rotate="-45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" />
+         </children>
+      </Group>
+      <Group layoutX="586.0" layoutY="641.0" fx:id="x14">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" layoutX="-1.0" layoutY="2.0" rotate="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" rotate="-45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" x="-0.9180488586425781" y="1.9103775024414062" />
+         </children>
+      </Group>
+      <Group layoutX="586.0" layoutY="541.0" fx:id="x13">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" layoutX="-1.0" layoutY="2.0" rotate="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" rotate="-45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" x="-0.9180488586425781" y="1.9103775024414062" />
+         </children>
+      </Group>
+      <Group layoutX="586.0" layoutY="340.0" fx:id="x12">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" layoutX="-1.0" layoutY="2.0" rotate="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" rotate="-45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" x="-0.9180488586425781" y="1.9103775024414062" />
+         </children>
+      </Group>
+      <Group layoutX="587.0" layoutY="241.0" fx:id="x11">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" layoutX="-1.0" layoutY="2.0" rotate="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" rotate="-45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" x="-0.9180488586425781" y="1.9103775024414062" />
+         </children>
+      </Group>
+      <Group layoutX="586.0" layoutY="141.0" fx:id="x10">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" layoutX="-1.0" layoutY="2.0" rotate="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" layoutX="-0.9180488586425781" layoutY="1.9103775024414062" rotate="-45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" />
+         </children>
+      </Group>
+      <Group layoutX="486.0" layoutY="541.0" fx:id="x9">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" layoutX="-1.0" layoutY="2.0" rotate="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" rotate="-45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" x="-0.9180488586425781" y="1.9103775024414062" />
+         </children>
+      </Group>
+      <Group layoutX="486.0" layoutY="441.0" fx:id="x8">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" layoutX="-1.0" layoutY="2.0" rotate="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" rotate="-45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" x="-0.9180488586425781" y="1.9103775024414062" />
+         </children>
+      </Group>
+      <Group layoutX="486.0" layoutY="340.0" fx:id="x7">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" layoutX="-1.0" layoutY="2.0" rotate="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" rotate="-45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" x="-0.9180488586425781" y="1.9103775024414062" />
+         </children>
+      </Group>
+      <Group layoutX="385.0" layoutY="641.0" fx:id="x6">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" layoutX="-1.0" layoutY="2.0" rotate="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" rotate="-45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" x="-0.9180488586425781" y="1.9103775024414062" />
+         </children>
+      </Group>
+      <Group layoutX="386.0" layoutY="441.0" fx:id="x5">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" layoutX="-1.0" layoutY="2.0" rotate="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" rotate="-45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" x="-0.9180488586425781" y="1.9103775024414062" />
+         </children>
+      </Group>
+      <Group layoutX="386.0" layoutY="241.0" fx:id="x4">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" layoutX="-1.0" layoutY="2.0" rotate="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" rotate="-45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" x="-0.9180488586425781" y="1.9103775024414062" />
+         </children>
+      </Group>
+      <Group layoutX="287.0" layoutY="741.0" fx:id="x3">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" layoutX="-1.0" layoutY="2.0" rotate="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" rotate="-45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" x="-0.9180488586425781" y="1.9103775024414062" />
+         </children>
+      </Group>
+      <Group layoutX="286.0" layoutY="441.0" fx:id="x2">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" layoutX="-1.0" layoutY="2.0" rotate="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" rotate="-45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" x="-0.9180488586425781" y="1.9103775024414062" />
+         </children>
+      </Group>
+      <Group layoutX="286.0" layoutY="141.0" fx:id="x1">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" layoutX="-1.0" layoutY="2.0" rotate="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" rotate="-45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="4.0" x="-0.9180488586425781" y="1.9103775024414062" />
+         </children>
+      </Group>
+      <Group fx:id="whiteTurn" layoutX="43.0" layoutY="365.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f4f4f4" height="33.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.3" width="200.0">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="1.0" green="0.8627451062202454" />
+                     </color>
+                  </DropShadow>
+               </effect></Rectangle>
+            <Label alignment="CENTER" prefHeight="34.0" prefWidth="202.0" text="YOUR TURN" textAlignment="CENTER">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <Group fx:id="blackTurn" layoutX="943.0" layoutY="365.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f4f4f4" height="33.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.3" width="200.0">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="1.0" green="0.8627451062202454" />
+                     </color>
+                  </DropShadow>
+               </effect></Rectangle>
+            <Label alignment="CENTER" prefHeight="34.0" prefWidth="202.0" text="CURRENT TURN" textAlignment="CENTER">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <VBox alignment="CENTER" layoutX="944.0" layoutY="365.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="54.0" prefWidth="200.0" text="BLACK">
+               <font>
+                  <Font name="Georgia Bold" size="30.0" />
+               </font>
+            </Label>
+            <ProgressBar fx:id="blackProgress" prefHeight="18.0" prefWidth="78.0" progress="0.0" style="-fx-accent: black;" />
+            <Separator prefHeight="14.0" prefWidth="200.0" visible="false" />
+            <ChoiceBox fx:id="algoChoiceBox" prefHeight="28.0" prefWidth="165.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-width: 0.3;" />
+         </children>
+      </VBox>
+      <Button fx:id="restart" layoutX="522.0" layoutY="39.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="132.0" text="Restart" textAlignment="CENTER">
+         <font>
+            <Font name="Georgia" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
